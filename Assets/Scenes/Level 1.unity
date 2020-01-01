@@ -246,7 +246,7 @@ MonoBehaviour:
     - {fileID: 1654661232}
     - {fileID: 1705662677}
   smoothRoute: 1
-  editorVisualisationSubsteps: 100
+  editorVisualisationSubsteps: 200
 --- !u!4 &653817305
 Transform:
   m_ObjectHideFlags: 0
@@ -562,6 +562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e0e0ef545b434b07bb6b19067432f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xSpeed: 4
 --- !u!1 &1117647275
 GameObject:
   m_ObjectHideFlags: 0
