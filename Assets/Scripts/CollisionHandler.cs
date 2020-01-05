@@ -1,10 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CollisionHandler : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other) {
-        print("Player Trigger");
+        StartDeathSequence();
+    }
+
+    private void StartDeathSequence() {
+        SendMessage("OnPlayerDeath");
     }
 }

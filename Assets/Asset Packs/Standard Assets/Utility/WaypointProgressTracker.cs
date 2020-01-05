@@ -1,10 +1,12 @@
 using System;
 using UnityEngine;
 
-namespace UnityStandardAssets.Utility
-{
-    public class WaypointProgressTracker : MonoBehaviour
-    {
+namespace UnityStandardAssets.Utility {
+    public class WaypointProgressTracker : MonoBehaviour {
+        // JDraak -- force this script to pay attention to Time.timeScale.
+        private float priorTimeScale;
+        private float initialLookAheadOffset;
+
         // This script can be used with any object that is supposed to follow a
         // route marked out by waypoints.
 
@@ -13,7 +15,7 @@ namespace UnityStandardAssets.Utility
 
         [SerializeField] private WaypointCircuit circuit; // A reference to the waypoint-based route we should follow
 
-        [SerializeField] private float lookAheadForTargetOffset = 5;
+        private float lookAheadForTargetOffset = 1;
         // The offset ahead along the route that the we will aim for
 
         [SerializeField] private float lookAheadForTargetFactor = .1f;
@@ -31,16 +33,15 @@ namespace UnityStandardAssets.Utility
         [SerializeField] private float pointToPointThreshold = 4;
         // proximity to waypoint which must be reached to switch target to next waypoint : only used in PointToPoint mode.
 
-        public enum ProgressStyle
-        {
+        public enum ProgressStyle {
             SmoothAlongRoute,
             PointToPoint,
         }
 
         // these are public, readable by other objects - i.e. for an AI to know where to head!
-        public WaypointCircuit.RoutePoint targetPoint { get; private set; }
-        public WaypointCircuit.RoutePoint speedPoint { get; private set; }
-        public WaypointCircuit.RoutePoint progressPoint { get; private set; }
+        public WaypointCircuit.RoutePoint TargetPoint { get; private set; }
+        public WaypointCircuit.RoutePoint SpeedPoint { get; private set; }
+        public WaypointCircuit.RoutePoint ProgressPoint { get; private set; }
 
         public Transform target;
 
@@ -50,75 +51,83 @@ namespace UnityStandardAssets.Utility
         private float speed; // current speed of this object (calculated from delta since last frame)
 
         // setup script properties
-        private void Start()
-        {
+        private void Start() {
+            // JDraak -- force this script to pay attention to Time.timeScale.
+            priorTimeScale = Time.timeScale;
+            initialLookAheadOffset = lookAheadForTargetOffset;
+
             // we use a transform to represent the point to aim for, and the point which
             // is considered for upcoming changes-of-speed. This allows this component
             // to communicate this information to the AI without requiring further dependencies.
 
             // You can manually create a transform and assign it to this component *and* the AI,
             // then this component will update it, and the AI can read it.
-            if (target == null)
-            {
+            if (target == null) {
                 target = new GameObject(name + " Waypoint Target").transform;
             }
 
             Reset();
         }
 
+        public float GetForwardSpeed() {
+            return lookAheadForTargetOffset;
+        }
+
+        public void SetForwardSpeed(float speedFactor) {
+            if (speedFactor < 0) speedFactor = 0;
+            if (speedFactor > 20) speedFactor = 20;
+            lookAheadForTargetOffset = speedFactor;
+        }
 
         // reset the object to sensible values
-        public void Reset()
-        {
+        public void Reset() {
             progressDistance = 0;
             progressNum = 0;
-            if (progressStyle == ProgressStyle.PointToPoint)
-            {
+            if (progressStyle == ProgressStyle.PointToPoint) {
                 target.position = circuit.Waypoints[progressNum].position;
                 target.rotation = circuit.Waypoints[progressNum].rotation;
             }
         }
 
 
-        private void Update()
-        {
-            if (progressStyle == ProgressStyle.SmoothAlongRoute)
-            {
+        private void Update() {
+            if (priorTimeScale != Time.timeScale) {
+                lookAheadForTargetOffset = initialLookAheadOffset * Time.timeScale;
+                priorTimeScale = Time.timeScale;
+            }
+
+            if (progressStyle == ProgressStyle.SmoothAlongRoute) {
                 // determine the position we should currently be aiming for
                 // (this is different to the current progress position, it is a a certain amount ahead along the route)
                 // we use lerp as a simple way of smoothing out the speed over time.
-                if (Time.deltaTime > 0)
-                {
-                    speed = Mathf.Lerp(speed, (lastPosition - transform.position).magnitude/Time.deltaTime,
-                                       Time.deltaTime);
-                }
+
+                // speed = Mathf.Lerp(speed, (lastPosition - transform.position).magnitude/Time.deltaTime,
+                //                    Time.deltaTime);
+                speed = Time.deltaTime;
+
                 target.position =
-                    circuit.GetRoutePoint(progressDistance + lookAheadForTargetOffset + lookAheadForTargetFactor*speed)
+                    circuit.GetRoutePoint(progressDistance + lookAheadForTargetOffset + lookAheadForTargetFactor * speed)
                            .position;
                 target.rotation =
                     Quaternion.LookRotation(
-                        circuit.GetRoutePoint(progressDistance + lookAheadForSpeedOffset + lookAheadForSpeedFactor*speed)
+                        circuit.GetRoutePoint(progressDistance + lookAheadForSpeedOffset + lookAheadForSpeedFactor * speed)
                                .direction);
 
 
                 // get our current progress along the route
-                progressPoint = circuit.GetRoutePoint(progressDistance);
-                Vector3 progressDelta = progressPoint.position - transform.position;
-                if (Vector3.Dot(progressDelta, progressPoint.direction) < 0)
-                {
-                    progressDistance += progressDelta.magnitude*0.5f;
+                ProgressPoint = circuit.GetRoutePoint(progressDistance);
+                Vector3 progressDelta = ProgressPoint.position - transform.position;
+                if (Vector3.Dot(progressDelta, ProgressPoint.direction) < 0) {
+                    progressDistance += progressDelta.magnitude * 0.5f;
                 }
 
                 lastPosition = transform.position;
-            }
-            else
-            {
+            } else {
                 // point to point mode. Just increase the waypoint if we're close enough:
 
                 Vector3 targetDelta = target.position - transform.position;
-                if (targetDelta.magnitude < pointToPointThreshold)
-                {
-                    progressNum = (progressNum + 1)%circuit.Waypoints.Length;
+                if (targetDelta.magnitude < pointToPointThreshold) {
+                    progressNum = (progressNum + 1) % circuit.Waypoints.Length;
                 }
 
 
@@ -126,10 +135,9 @@ namespace UnityStandardAssets.Utility
                 target.rotation = circuit.Waypoints[progressNum].rotation;
 
                 // get our current progress along the route
-                progressPoint = circuit.GetRoutePoint(progressDistance);
-                Vector3 progressDelta = progressPoint.position - transform.position;
-                if (Vector3.Dot(progressDelta, progressPoint.direction) < 0)
-                {
+                ProgressPoint = circuit.GetRoutePoint(progressDistance);
+                Vector3 progressDelta = ProgressPoint.position - transform.position;
+                if (Vector3.Dot(progressDelta, ProgressPoint.direction) < 0) {
                     progressDistance += progressDelta.magnitude;
                 }
                 lastPosition = transform.position;
@@ -137,10 +145,8 @@ namespace UnityStandardAssets.Utility
         }
 
 
-        private void OnDrawGizmos()
-        {
-            if (Application.isPlaying)
-            {
+        private void OnDrawGizmos() {
+            if (Application.isPlaying) {
                 Gizmos.color = Color.green;
                 Gizmos.DrawLine(transform.position, target.position);
                 Gizmos.DrawWireSphere(circuit.GetRoutePosition(progressDistance), 1);
