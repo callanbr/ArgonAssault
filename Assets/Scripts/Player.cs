@@ -22,6 +22,13 @@ public class Player : MonoBehaviour{
         
     }
 
+    private void OnCollisionEnter(Collision collision) {
+        print("Player Collision");
+    }
+    private void OnTriggerEnter(Collider other) {
+        print("Player Trigger");
+    }
+
     // Update is called once per frame
     void Update() {
         ProcessTranslation();
