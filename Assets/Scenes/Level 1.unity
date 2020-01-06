@@ -879,7 +879,7 @@ MonoBehaviour:
     - {fileID: 496113112}
     - {fileID: 92159497}
   smoothRoute: 1
-  editorVisualisationSubsteps: 200
+  editorVisualisationSubsteps: 50
 --- !u!4 &653817305
 Transform:
   m_ObjectHideFlags: 0
@@ -1166,11 +1166,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circuit: {fileID: 653817304}
-  lookAheadForTargetFactor: 0.1
+  lookAheadForTargetFactor: 20
   lookAheadForSpeedOffset: 10
   lookAheadForSpeedFactor: 0.2
   progressStyle: 0
-  pointToPointThreshold: 50
+  pointToPointThreshold: 500
   target: {fileID: 963194228}
 --- !u!1 &999273138
 GameObject:
