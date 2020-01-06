@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1001889390
 Transform:
   m_ObjectHideFlags: 0
@@ -44,8 +44,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4e2e70dd306f844b9b87d1742db7500f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
-  m_Pitch: 1
+  m_Volume: 1
+  m_Pitch: 0.8
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -5009,6 +5009,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 190b1e061325b47a29f1add5eb73bce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelLoadDelay: 1
+  deathFX: {fileID: 1001889388}
 --- !u!114 &7502184531465784558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5021,8 +5023,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bce17aea2ca4cf984ca6da95f01e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xSpeed: 12
-  ySpeed: 12
+  xSpeed: 8
+  ySpeed: 8
   xRange: 7
   yRange: 5.5
   positionPitchFactor: -4.5
