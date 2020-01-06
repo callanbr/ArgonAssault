@@ -9,5 +9,15 @@ public class Enemy : MonoBehaviour{
         Destroy(gameObject);
     }
 
+    // Start is called before the first frame update
+    void Start(){
 
+        AddNonTriggerBoxCollider();
+
+    }
+
+    private void AddNonTriggerBoxCollider() {
+        Collider boxCollider = gameObject.AddComponent<BoxCollider>();
+        boxCollider.isTrigger = false;
+    }
 }
