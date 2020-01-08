@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour{
 
+    [SerializeField] GameObject deathFX;
+
     private void OnParticleCollision(GameObject other) {
+        Instantiate(deathFX, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
