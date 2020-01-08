@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathFX: {fileID: 4270729315781102131, guid: 2ebdd659d26f749e3a663fc694e8e67d, type: 3}
+  deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
 --- !u!1001 &249307536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathFX: {fileID: 4270729315781102131, guid: 2ebdd659d26f749e3a663fc694e8e67d, type: 3}
+  deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
 --- !u!1 &253250263
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +592,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6614068059286697319, guid: 192b7fe2500f5e0449f21c651bc0474c,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614068059286697319, guid: 192b7fe2500f5e0449f21c651bc0474c,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 192b7fe2500f5e0449f21c651bc0474c, type: 3}
 --- !u!1 &464650748
@@ -753,7 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathFX: {fileID: 4270729315781102131, guid: 2ebdd659d26f749e3a663fc694e8e67d, type: 3}
+  deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
 --- !u!4 &523081445 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4248845843280306, guid: a19af03b7c64771489f010af565cc649,
@@ -778,7 +788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathFX: {fileID: 4270729315781102131, guid: 2ebdd659d26f749e3a663fc694e8e67d, type: 3}
+  deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
 --- !u!1 &653817303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,7 +1117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circuit: {fileID: 653817304}
-  lookAheadForTargetFactor: 75
+  lookAheadForTargetFactor: 40
   lookAheadForSpeedOffset: 10
   lookAheadForSpeedFactor: 0.2
   progressStyle: 0
@@ -1212,7 +1222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathFX: {fileID: 4270729315781102131, guid: 2ebdd659d26f749e3a663fc694e8e67d, type: 3}
+  deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
 --- !u!1 &1117647275
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,7 +1388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathFX: {fileID: 4270729315781102131, guid: 2ebdd659d26f749e3a663fc694e8e67d, type: 3}
+  deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
 --- !u!1 &1510424677 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1754910023302818, guid: 60f26d6465b822444ab5dadf5986bb35,
@@ -1397,7 +1407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathFX: {fileID: 4270729315781102131, guid: 2ebdd659d26f749e3a663fc694e8e67d, type: 3}
+  deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
 --- !u!1001 &1616477887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1497,7 +1507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathFX: {fileID: 4270729315781102131, guid: 2ebdd659d26f749e3a663fc694e8e67d, type: 3}
+  deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
 --- !u!1 &1654661231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,7 +1661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathFX: {fileID: 4270729315781102131, guid: 2ebdd659d26f749e3a663fc694e8e67d, type: 3}
+  deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
 --- !u!1001 &1877063856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1751,7 +1761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathFX: {fileID: 4270729315781102131, guid: 2ebdd659d26f749e3a663fc694e8e67d, type: 3}
+  deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
 --- !u!1001 &1954307131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2003,7 +2013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathFX: {fileID: 4270729315781102131, guid: 2ebdd659d26f749e3a663fc694e8e67d, type: 3}
+  deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
 --- !u!1001 &7066067014082306902
 PrefabInstance:
   m_ObjectHideFlags: 0
