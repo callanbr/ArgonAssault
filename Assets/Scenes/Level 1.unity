@@ -279,6 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 1250
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
 --- !u!1001 &249307536
@@ -380,6 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 1750
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
 --- !u!1 &253250263
@@ -805,6 +807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 1250
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
 --- !u!4 &523081445 stripped
@@ -831,6 +834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 1000
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
 --- !u!1 &653817303
@@ -1225,6 +1229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b8b07ec0cf8d49af946f8037f5de439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 12
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,6 +1433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 1000
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
 --- !u!1 &1117647275
@@ -1595,6 +1601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 1750
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
 --- !u!1 &1510424677 stripped
@@ -1615,6 +1622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 1250
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
 --- !u!1001 &1616477887
@@ -1716,6 +1724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 1750
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
 --- !u!1 &1654661231
@@ -1871,6 +1880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 1000
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
 --- !u!1001 &1877063856
@@ -1972,6 +1982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 1750
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
 --- !u!1 &1909382201
@@ -2022,10 +2033,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2324,6 +2335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c468dcfa92a44de3b3b9eba2c85d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 1000
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
 --- !u!1001 &7066067014082306902
