@@ -282,7 +282,7 @@ MonoBehaviour:
   scorePerHit: 1250
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!1001 &249307536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -385,7 +385,7 @@ MonoBehaviour:
   scorePerHit: 1750
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!1 &253250263
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +525,7 @@ MonoBehaviour:
   scorePerHit: 1000
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!1001 &298170545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -778,7 +778,7 @@ MonoBehaviour:
   scorePerHit: 1250
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!1001 &427869349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1066,7 +1066,7 @@ MonoBehaviour:
   scorePerHit: 1250
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!4 &523081445 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4248845843280306, guid: a19af03b7c64771489f010af565cc649,
@@ -1094,7 +1094,7 @@ MonoBehaviour:
   scorePerHit: 1000
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!1 &653817303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,7 +1505,7 @@ MonoBehaviour:
   scorePerHit: 1250
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!1 &942103724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,7 +1802,7 @@ MonoBehaviour:
   scorePerHit: 1000
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!1 &1117647275
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,7 +1971,7 @@ MonoBehaviour:
   scorePerHit: 1750
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!1 &1510424677 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1754910023302818, guid: 60f26d6465b822444ab5dadf5986bb35,
@@ -1993,7 +1993,7 @@ MonoBehaviour:
   scorePerHit: 1250
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!1001 &1616477887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2096,7 +2096,7 @@ MonoBehaviour:
   scorePerHit: 1750
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!1 &1654661231
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,7 +2253,7 @@ MonoBehaviour:
   scorePerHit: 1000
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!1001 &1877063856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2356,7 +2356,7 @@ MonoBehaviour:
   scorePerHit: 1750
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!1 &1909382201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2713,7 +2713,7 @@ MonoBehaviour:
   scorePerHit: 1000
   deathFX: {fileID: 8228175498950090187, guid: 371274c9f3e61424f8ec743e339f825b, type: 3}
   parent: {fileID: 70392710}
-  hits: 10
+  hits: 5
 --- !u!1001 &7066067014082306902
 PrefabInstance:
   m_ObjectHideFlags: 0
