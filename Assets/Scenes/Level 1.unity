@@ -604,7 +604,7 @@ Animator:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 247972a8143f2407e804ee9f650bc7a6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1027,7 +1027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957032273}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1049.9, y: 1349, z: 238}
+  m_LocalPosition: {x: 431, y: 1459, z: 238}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2024884046}
@@ -1089,6 +1089,8 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -6244743193812264370, guid: 34de14ff030f64a90b552464a15ac547, type: 2}
+    value: {fileID: 963194229}
+  - key: {fileID: 1301049152220202897, guid: 34de14ff030f64a90b552464a15ac547, type: 2}
     value: {fileID: 963194229}
   m_ExposedReferences:
     m_References: []
@@ -1193,17 +1195,17 @@ PrefabInstance:
     - target: {fileID: 7066067013905008118, guid: 06cd16b74d3e74dcbad66f7dfac7795a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -447.5
+      value: 519
       objectReference: {fileID: 0}
     - target: {fileID: 7066067013905008118, guid: 06cd16b74d3e74dcbad66f7dfac7795a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1124
+      value: 919.7
       objectReference: {fileID: 0}
     - target: {fileID: 7066067013905008118, guid: 06cd16b74d3e74dcbad66f7dfac7795a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -335
+      value: -167
       objectReference: {fileID: 0}
     - target: {fileID: 7066067013905008118, guid: 06cd16b74d3e74dcbad66f7dfac7795a,
         type: 3}
@@ -1244,6 +1246,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066067013905008118, guid: 06cd16b74d3e74dcbad66f7dfac7795a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 261.25256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066067013905008118, guid: 06cd16b74d3e74dcbad66f7dfac7795a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 82.77603
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06cd16b74d3e74dcbad66f7dfac7795a, type: 3}
