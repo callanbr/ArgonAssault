@@ -14,12 +14,12 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
-  m_FogDensity: 0.01
-  m_LinearFogStart: 0
-  m_LinearFogEnd: 300
+  m_Fog: 1
+  m_FogColor: {r: 0.22067462, g: 0.22677964, b: 0.2735849, a: 1}
+  m_FogMode: 1
+  m_FogDensity: 0.005
+  m_LinearFogStart: 100
+  m_LinearFogEnd: 900
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
@@ -754,8 +754,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 1
-  m_Color: {r: 0.58138007, g: 0.5943396, b: 0.4962175, a: 1}
-  m_Intensity: 2
+  m_Color: {r: 0.72196513, g: 0.8203025, b: 0.9056604, a: 1}
+  m_Intensity: 1.85
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
@@ -1282,26 +1282,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7502184531465784558, guid: 192b7fe2500f5e0449f21c651bc0474c,
-        type: 3}
-      propertyPath: xRange
-      value: 6.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7502184531465784558, guid: 192b7fe2500f5e0449f21c651bc0474c,
-        type: 3}
-      propertyPath: yRange
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7502184531465784558, guid: 192b7fe2500f5e0449f21c651bc0474c,
-        type: 3}
-      propertyPath: xSpeed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7502184531465784558, guid: 192b7fe2500f5e0449f21c651bc0474c,
-        type: 3}
-      propertyPath: ySpeed
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 192b7fe2500f5e0449f21c651bc0474c, type: 3}
 --- !u!1 &1056944821 stripped
@@ -1537,37 +1517,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &1252764496 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000013772491214, guid: 192b7fe2500f5e0449f21c651bc0474c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1052376231}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1252764497 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011334895800, guid: 192b7fe2500f5e0449f21c651bc0474c,
     type: 3}
   m_PrefabInstance: {fileID: 1052376231}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1252764498
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1252764496}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1335167882
 GameObject:
   m_ObjectHideFlags: 0
@@ -2328,7 +2283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957032273}
   m_LocalRotation: {x: -0, y: 0.34291324, z: -0, w: 0.9393671}
-  m_LocalPosition: {x: 461.6, y: 1090, z: 305.5}
+  m_LocalPosition: {x: 522.8, y: 1090, z: -433.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1616477888}
@@ -2402,6 +2357,8 @@ PlayableDirector:
   - key: {fileID: 1301049152220202897, guid: 34de14ff030f64a90b552464a15ac547, type: 2}
     value: {fileID: 963194229}
   - key: {fileID: -8684912357524683638, guid: 34de14ff030f64a90b552464a15ac547, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5422861973387670132, guid: 34de14ff030f64a90b552464a15ac547, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References:
